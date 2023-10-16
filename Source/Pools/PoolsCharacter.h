@@ -36,6 +36,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	class UStatusPoolUI* StatusPoolUI;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	float Rate;
+	
 	FStatusInstance* Item1Buff;
 	FStatusInstance* Item2Buff;
 

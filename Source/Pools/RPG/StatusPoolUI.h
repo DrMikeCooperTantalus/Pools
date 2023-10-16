@@ -20,8 +20,8 @@ class POOLS_API UStatusPoolUI : public UUserWidget
 public:
 	UPROPERTY(BlueprintReadOnly, meta=(BindWidget))
 	class UPanelWidget* Container;
-	UPROPERTY(BlueprintReadOnly, meta=(BindWidget))
-	class UPanelWidget* Row;
+	// UPROPERTY(BlueprintReadOnly, meta=(BindWidget))
+	// class UPanelWidget* Row;
 	UPROPERTY(BlueprintReadOnly, meta=(BindWidget))
 	class UStatusUI* Prefab;
 
@@ -32,6 +32,6 @@ public:
 protected:
 	TPool<struct FStatusInstance, RowSize>* Pool;
 
-	TArray<class UPanelWidget*> Rows;
+	//TArray<class UPanelWidget*> Rows;
 	TArray<class UStatusUI*> UIs;
 };

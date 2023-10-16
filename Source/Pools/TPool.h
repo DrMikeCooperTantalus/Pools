@@ -45,8 +45,14 @@ public:
 						return;
 					}
 				}
+				// start at the beginning of the next page
 				Page++;
 				Index = 0;
+				// if that's valid, return 
+				if (Page < Pool->Pages.Num() && Pool->Pages[Page][Index].IsValid())
+				{
+					return;
+				}
 			}
 			while (Page < Pool->Pages.Num());
 			

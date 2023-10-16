@@ -69,7 +69,7 @@ void APoolsCharacter::Tick(float DeltaSeconds)
 	}
 
 	// add status effects regularly, more often when the pool is low
-	if (rand()%100 > count)
+	if ((rand()%100) * Rate > count)
 	{
 		int index = rand()% StatusLibrary.Num();
 		UStatus* status = StatusLibrary[index];
