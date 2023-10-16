@@ -25,4 +25,5 @@ public:
 	
 protected:
 	struct FStatusInstance* status;
+	class UStatus* statusPtr;
 };

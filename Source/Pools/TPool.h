@@ -128,6 +128,11 @@ public:
 
 	// accessor for the demo UI - shouldn't normally need access to this
 	const TArray<T*>& GetPages() { return Pages; }
+
+	virtual ~TPool()
+	{
+		Clear();
+	}
 	
 private:
 	// these get created on the fly as big continuous blocks of memory
